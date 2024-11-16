@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Excluir dados do Aluno</title>
+        <Style>
+             body{
+                background-color: #b9b9b9;
+                text-align: center;
+            }
+
+            h1, h3{
+                color: #042241 ;
+            }
+
+            input[type="submit"] {
+                background-color: #042241;
+                color: #c9c9c9;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px; 
+            }
+
+            input[type="submit"]:hover {
+                color: white;
+                background-color: #4682B4;
+            }
+
+            a{
+                color: #042241;
+            }
+        </Style>
+    </head>
+    <body>
+        <h1>Você deseja deletar as informações do aluno {{aluno.nome}}</h1>
+        <form action='' method="post">
+            <h3>Aperte no sim para confirmar</h3>
+            <input type = "submit" value="YES">
+            <br>
+            <br>
+            <a href='/Alunos'>Cancelar</a>
+        </form>
+    </body>
+</html>

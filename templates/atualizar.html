@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atualizar informações</title>
+        <style>
+            body{
+                background-color: #b9b9b9;
+                text-align: center;
+            }
+
+            h1, p{
+                color: #042241 ;
+            }
+
+            .formulario {
+                border: 2px solid #4682B4; 
+                display: inline-block; 
+                padding: 20px; 
+                margin-top: 10px;
+                background-color: #c9c9c9; 
+                border-radius: 10px; 
+            }
+
+            input[type="submit"] {
+                background-color: #042241;
+                color: #c9c9c9;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px; 
+            }
+
+            input[type="submit"]:hover {
+                color: white;
+                background-color: #4682B4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informe as informações do aluno</h1>
+        <br>
+        <div class="formulario">
+            <form action='' method = "POST">
+                <p>Nome <input type = "text" name = "nome" value = "{{aluno.nome}} "/></p>
+                <p>Idade <input type = "integer" name = "idade" value = "{{aluno.idade}} "/></p>
+                <p>Serie <input type = "text" name = "serie" value = "{{aluno.serie}} "/></p>
+                <p><input type = "submit" value = "Submit" /></p>
+            </form>
+        </div>
+    </body>
+</html>

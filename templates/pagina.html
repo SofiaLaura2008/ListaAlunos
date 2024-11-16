@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alunos</title>
+        <style>
+            body{
+                background-color: #b9b9b9;
+                text-align: center;
+            }
+
+            h1, h3{
+                color: #042241 ;
+            }
+
+            .formulario {
+                border: 2px solid #4682B4; 
+                display: inline-block; 
+                padding: 20px; 
+                margin-top: 10px;
+                background-color: #c9c9c9; 
+                border-radius: 10px; 
+            }
+
+            input[type="submit"] {
+                background-color: #042241;
+                color: #c9c9c9;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px; 
+            }
+
+            input[type="submit"]:hover {
+                color: white;
+                background-color: #4682B4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informe as informações do aluno</h1>
+        <div class="formulario">
+            <form action="" method="post">
+                <h3>ALuno ID: <input type="integer" name="alunoId"></h3>
+                <h3>Nome: <input type="text" name="nome"></h3>
+                <h3>Idade: <input type="text" name="idade"></h3>
+                <h3>Serie: <input type="text" name="serie"></h3>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

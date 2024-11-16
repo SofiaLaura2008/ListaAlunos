@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aluno de acordo com o id {{aluno.alunoId}}</title>
+        <style>
+            body{
+                background-color: #b9b9b9;
+                text-align: center;
+            }
+
+            h1, h3, p, span{
+                color: #042241 ;
+            }
+
+            hr{
+                border-color: #4682B4   ;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                background-color: #042241;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .btn:hover {
+                background-color: #4682B4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informação do aluno: {{aluno.nome}}</h1>
+        <h3 style="display: inline;">Id: </h3>
+        <span>{{aluno.alunoId}}</span>
+        <br><br>
+
+        <hr>
+        <br>
+
+        <h3 style="display: inline;">Nome</h3>
+        <span>{{aluno.nome}}</span>
+
+        <br><br>
+        <hr>
+        <br>
+
+        <h3 style="display: inline;">Idade</h3>
+        <span>{{aluno.idade}}</span>
+        <br><br>
+
+        <hr>
+        <br>
+
+        <h3 style="display: inline;">Serie</h3>
+        <span>{{aluno.serie}}</span>
+        <br><br>
+        
+        <hr>
+        <br>
+        
+        <a href="/Alunos/{{aluno.id}}/atualizar" class="btn">Gostaria de atualizar as informações do aluno</a>
+        <br><br>
+
+        <hr>
+        <br>
+
+        <a href="/Alunos/{{aluno.id}}/excluir" class="btn">Gostaria de excluir as informações do aluno</a>
+        <br><br>
+
+        <hr>
+        <br>
+        
+        <a href='/Alunos' class="btn">Voltar</a>
+        <br><br>
+    </body>
+</html>
